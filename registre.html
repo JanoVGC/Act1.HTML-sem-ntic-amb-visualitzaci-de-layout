@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registre</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -19,12 +20,15 @@
         </ul>
     </nav>
 
+    <main class="main-content">
+    <div class="form-container">
     <form action="login.html" method="get">
         <label for="login">Ja tens un compte? Inicia sessió:</label>
         <input type="submit" value="Login">
     </form>
+    </div>
 
-    <section>
+    <section class="login-box">
         <h2>Formulari de registre</h2>
         <form action="registre.php" method="POST">
             <label for="username">Nom d'usuari:</label>
@@ -49,6 +53,8 @@
         <h2>Notícies i actualitzacions</h2>
         <p>Aquí pots afegir notícies i actualitzacions sobre el registre.</p>
     </article>
+
+    </main>
 
     <footer>
         <p>&copy; 2024 El teu lloc web. Tots els drets reservats.</p>   

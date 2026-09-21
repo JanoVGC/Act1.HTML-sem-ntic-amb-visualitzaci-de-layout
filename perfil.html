@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -19,15 +20,19 @@
         </ul>
     </nav>
 
-    <section>
+    <main class="main-content">
+    <section class="profile-info">
+        <div class="avatar-container" aria-label="Avatar de perfil"></div>
         <h2>Benvingut al teu perfil</h2>
         <p>Aquí pots veure i editar la teva informació de perfil.</p>
     </section>
 
+    <div class="form-container">
     <form action="editar_perfil.html" method="get">
         <label for="editar">Editar perfil:</label>
         <input type="submit" value="Editar">
     </form>
+    </div>
 
     <aside>
         <h2>Informació addicional</h2>
@@ -38,6 +43,8 @@
         <h2>Notícies i actualitzacions</h2>
         <p>Aquí pots afegir notícies i actualitzacions sobre el perfil.</p>
     </article>
+
+    </main>
 
     <footer>
         <p>&copy; 2024 El teu lloc web. Tots els drets reservats.</p>
