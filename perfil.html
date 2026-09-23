@@ -1,56 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
+    <title>Perfil d'usuari</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="profile-page">
+    <div class="profile-layout">
+        <nav class="profile-sidebar" aria-label="Menú del perfil">
+            <a class="profile-avatar" href="perfil.html" aria-label="Perfil d'usuari">JA</a>
+            <ul>
+                <li><a href="index.html"><span aria-hidden="true">⌂</span>Inici</a></li>
+                <li><a class="active" href="perfil.html"><span aria-hidden="true">●</span>Perfil</a></li>
+                <li><a href="#agenda"><span aria-hidden="true">▤</span>Agenda</a></li>
+                <li><a href="#favorits"><span aria-hidden="true">★</span>Favorits</a></li>
+                <li><a href="#grups"><span aria-hidden="true">♣</span>Grups</a></li>
+                <li><a href="#configuracio"><span aria-hidden="true">⚙</span>Configuració</a></li>
+                <li><a href="#sortir"><span aria-hidden="true">↪</span>Sortir</a></li>
+            </ul>
+        </nav>
 
-    <header>
-        <h1>Perfil</h1>
-    </header>
+        <div class="profile-workspace">
+            <header class="profile-banner">
+                <div class="profile-banner-image" aria-hidden="true"></div>
+                <div class="profile-banner-info">
+                    <div class="profile-small-avatar" aria-label="Avatar de l'usuari">JA</div>
+                    <div>
+                        <h1>Jan Altisent</h1>
+                        <p>Dissenyador web i creador de continguts</p>
+                    </div>
+                </div>
+                <button class="camera-button" type="button" aria-label="Canvia la foto de perfil">◉</button>
+            </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inici</a></li>
-            <li><a href="registre.html">Registre</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
-    </nav>
+            <main class="profile-content">
+                <section class="profile-section" id="configuracio">
+                    <h2>Informació personal</h2>
+                    <ul>
+                        <li><strong>Nom:</strong> Jan Altisent</li>
+                        <li><strong>Correu:</strong> jan.altisent@example.com</li>
+                        <li><strong>Ubicació:</strong> Barcelona</li>
+                        <li><strong>Telèfon:</strong> +34 600 000 000</li>
+                    </ul>
+                </section>
 
-    <main class="main-content">
-    <section class="profile-info">
-        <div class="avatar-container" aria-label="Avatar de perfil"></div>
-        <h2>Benvingut al teu perfil</h2>
-        <p>Aquí pots veure i editar la teva informació de perfil.</p>
-    </section>
+                <aside class="profile-aside" id="agenda">
+                    <h2>Agenda</h2>
+                    <p><strong>Avui</strong></p>
+                    <p>Revisió del projecte a les 16:00</p>
+                    <p>Reunió d'equip a les 18:30</p>
+                </aside>
 
-    <div class="form-container">
-    <form action="editar_perfil.html" method="get">
-        <label for="editar">Editar perfil:</label>
-        <input type="submit" value="Editar">
-    </form>
+                <article class="profile-article" id="favorits">
+                    <h2>Activitat recent</h2>
+                    <p>Has actualitzat la teva informació de perfil.</p>
+                    <p>Has afegit una nova publicació als favorits.</p>
+                </article>
+            </main>
+
+            <footer>
+                <p>&copy; 2024 El teu lloc web. Tots els drets reservats.</p>
+            </footer>
+        </div>
     </div>
-
-    <aside>
-        <h2>Informació addicional</h2>
-        <p>Aquí pots afegir informació addicional sobre el perfil.</p>  
-    </aside>
-
-    <article>
-        <h2>Notícies i actualitzacions</h2>
-        <p>Aquí pots afegir notícies i actualitzacions sobre el perfil.</p>
-    </article>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2024 El teu lloc web. Tots els drets reservats.</p>
-    </footer>   
-
-
-    
 </body>
 </html>
