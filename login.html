@@ -1,55 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>Login</h1>  
-    </header>
-
-    <nav>
+<body class="login-page">
+    <nav class="login-nav" aria-label="Navegació principal">
+        <a class="login-avatar" href="perfil.html" aria-label="Obre el perfil">JP</a>
+        <a href="registre.html">Registre</a>
         <ul>
             <li><a href="index.html">Inici</a></li>
-            <li><a href="registre.html">Registre</a></li>
             <li><a href="perfil.html">Perfil</a></li>
         </ul>
     </nav>
-    <main class="main-content">
-    <section class="login-box">
-        <h2>Formulari de login</h2>
-        <form action="login.php" method="POST">
-            <label for="username">Nom d'usuari:</label>
-            <input type="text" id="username" name="username" required><br><br>
+    <main class="login-main">
+        <section class="login-section">
+            <div class="large-avatar" aria-label="Avatar de l'usuari">JP</div>
+            <h1>Inicia sessió</h1>
+            <form class="login-form" action="login.php" method="POST">
+                <label for="username">Nom d'usuari:</label>
+                <input type="text" id="username" name="username" required>
 
-            <label for="password">Contrasenya:</label>
-            <input type="password" id="password" name="password" required><br><br>
+                <label for="password">Contrasenya:</label>
+                <input type="password" id="password" name="password" required>
 
-            <input type="submit" value="Iniciar sessió">
-        </form> 
-    </section>
+                <label class="remember-option" for="remember">
+                    <input type="checkbox" id="remember" name="remember">
+                    Recorda la contrasenya
+                </label>
 
-    <div class="form-container">
-    <form action="registre.html" method="get">
-        <label for="registre">Registra't:</label>
-        <input type="submit" value="Registre">
-    </form>
-    </div>
+                <input class="login-submit" type="submit" value="Iniciar sessió">
+            </form>
+        </section>
 
-    <aside>
-        <h2>Informació addicional</h2>
-        <p>Aquí pots afegir informació addicional sobre el login.</p>
-    </aside>
+        <div class="login-side-content">
+            <aside class="login-aside">
+                <h2>Informació addicional</h2>
+                <p>Consulta les opcions disponibles del teu compte.</p>
+            </aside>
 
-    <article>
-        <h2>Notícies i actualitzacions</h2>
-        <p>Aquí pots afegir notícies i actualitzacions sobre el login.</p>
-    </article>
-
-
+            <article class="login-article">
+                <h2>Notícies i actualitzacions</h2>
+                <p>Descobreix les novetats més recents del nostre lloc web.</p>
+            </article>
+        </div>
     </main>
 
     <footer>

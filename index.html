@@ -1,48 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Inici</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-
-    <header>
-        <h1>Benvingut al nostre lloc web</h1>
-    </header>
-
-    <nav>
+<body class="home-page">
+    <nav class="home-nav" aria-label="Navegació principal">
         <ul>
             <li><a href="registre.html">Registre</a></li>
             <li><a href="login.html">Login</a></li>
             <li><a href="perfil.html">Perfil</a></li>
         </ul>
-
+        <a class="avatar-logo" href="perfil.html" aria-label="Obre el perfil">JP</a>
     </nav>
 
     <main class="main-content">
-    <section>
-        <h2>Informació general</h2>
-        <p>Aquí pots afegir informació general sobre el teu lloc web.</p>
-    </section>
+        <section class="intro-section">
+            <h1>Benvingut al nostre lloc web</h1>
+            <p>Aquí trobaràs informació general i les novetats del nostre lloc web.</p>
+        </section>
 
-    <div class="form-container">
-    <form action="registre.html" method="get">
-        <label for="registre">Registra't:</label>
-        <input type="submit" value="Registre">
-    </form>
-    </div>
+        <section class="home-form" aria-label="Accés al registre">
+            <form action="registre.html" method="get">
+                <label for="registre">Vols formar part de la comunitat?</label>
+                <input id="registre" type="submit" value="Registra't">
+            </form>
+        </section>
 
-    <aside>
-        <h2>Informació addicional</h2>
-        <p>Aquí pots afegir informació addicional sobre el teu lloc web.</p>    
-    </aside>
+        <div class="content-stage">
+            <aside class="home-aside">
+                <h2>Informació addicional</h2>
+                <p>Consulta les opcions disponibles al nostre lloc web.</p>
+            </aside>
 
-    <article>
-        <h2>Notícies i actualitzacions</h2>
-        <p>Aquí pots afegir notícies i actualitzacions sobre el teu lloc web.</p>
-    </article>
+            <article class="news-article">
+                <h2>Notícies i actualitzacions</h2>
+                <p>Aquí pots trobar les notícies i actualitzacions més recents.</p>
+            </article>
+        </div>
     </main>
 
     <footer>

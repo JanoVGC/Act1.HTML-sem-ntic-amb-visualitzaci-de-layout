@@ -53,3 +53,399 @@
     a:hover {
         text-decoration: underline;
     }
+
+    .home-page {
+        background-color: #fff;
+    }
+
+    .home-page .home-nav,
+    .home-page .main-content,
+    .home-page footer {
+        width: min(96%, 1080px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-page .home-nav {
+        box-sizing: border-box;
+        min-height: 76px;
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        background-color: #dff1ff;
+        border: 2px solid #54b6ed;
+    }
+
+    .home-page .home-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 28px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .home-page .home-nav a {
+        color: #164b72;
+        font-weight: 700;
+    }
+
+    .avatar-logo {
+        width: 42px;
+        height: 42px;
+        display: grid;
+        place-items: center;
+        flex: 0 0 42px;
+        border-radius: 50%;
+        background-color: #5c9ed1;
+        color: #fff !important;
+        text-decoration: none;
+        font-size: 0.85rem;
+    }
+
+    .home-page .main-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 12px;
+    }
+
+    .intro-section,
+    .home-form,
+    .home-aside,
+    .news-article {
+        box-sizing: border-box;
+        border: 2px solid;
+    }
+
+    .intro-section {
+        min-height: 150px;
+        padding: 28px 32px;
+        background-color: #ffe2f4;
+        border-color: #e878b5;
+    }
+
+    .intro-section h1,
+    .intro-section p,
+    .home-form form,
+    .home-aside p,
+    .news-article p {
+        margin: 0;
+    }
+
+    .intro-section h1 {
+        text-align: left;
+    }
+
+    .home-form {
+        min-height: 92px;
+        padding: 18px 28px;
+        background-color: #eee6ff;
+        border-color: #9b82e8;
+    }
+
+    .home-form form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .home-form input {
+        padding: 9px 18px;
+        border: 0;
+        border-radius: 3px;
+        background-color: #6d55c8;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+    .content-stage {
+        position: relative;
+        min-height: 190px;
+    }
+
+    .home-aside {
+        position: absolute;
+        inset: 0 0 0 75%;
+        padding: 24px 20px;
+        background-color: #fff1d4;
+        border-color: #e5b95d;
+    }
+
+    .home-aside h2,
+    .news-article h2 {
+        margin-top: 0;
+    }
+
+    .news-article {
+        position: relative;
+        z-index: 1;
+        width: 75%;
+        min-height: 190px;
+        padding: 24px 28px;
+        background-color: #dcf8e8;
+        border-color: #69c890;
+    }
+
+    .home-page footer {
+        box-sizing: border-box;
+        min-height: 62px;
+        margin-top: 12px;
+        padding: 10px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #dff1ff;
+        border: 2px solid #54b6ed;
+    }
+
+    .home-page footer p {
+        margin: 0;
+    }
+
+    @media (max-width: 620px) {
+        .home-page .home-nav {
+            padding: 14px 16px;
+        }
+
+        .home-page .home-nav ul {
+            gap: 12px 18px;
+        }
+
+        .home-aside {
+            position: relative;
+            inset: auto;
+            min-height: 130px;
+        }
+
+        .news-article {
+            width: 100%;
+            min-height: 160px;
+        }
+    }
+
+    .login-page {
+        background-color: #fff;
+    }
+
+    .login-page .login-nav,
+    .login-page .login-main,
+    .login-page footer {
+        width: min(96%, 1080px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .login-page .login-nav {
+        box-sizing: border-box;
+        min-height: 76px;
+        padding: 14px 24px;
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        background-color: #eee6ff;
+        border: 2px solid #9b82e8;
+    }
+
+    .login-page .login-nav > a:not(.login-avatar) {
+        color: #4e3a9b;
+        font-weight: 700;
+    }
+
+    .login-page .login-nav ul {
+        display: flex;
+        gap: 24px;
+        margin: 0 0 0 auto;
+        padding: 0;
+        list-style: none;
+    }
+
+    .login-page .login-nav ul a {
+        color: #4e3a9b;
+        font-weight: 700;
+    }
+
+    .login-avatar,
+    .large-avatar {
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background-color: #6d55c8;
+        color: #fff !important;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .login-avatar {
+        width: 42px;
+        height: 42px;
+        flex: 0 0 42px;
+        font-size: 0.85rem;
+    }
+
+    .login-page .login-main {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: minmax(240px, 1fr) minmax(0, 2fr);
+        gap: 12px;
+        margin-top: 12px;
+        padding: 12px;
+        background-color: #ffe5d1;
+        border: 2px solid #ed9c64;
+    }
+
+    .login-section,
+    .login-aside,
+    .login-article {
+        box-sizing: border-box;
+        border: 2px solid;
+    }
+
+    .login-section {
+        grid-column: 2;
+        min-height: 440px;
+        padding: 28px clamp(24px, 8vw, 90px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #dcf8e8;
+        border-color: #69c890;
+    }
+
+    .large-avatar {
+        width: 88px;
+        height: 88px;
+        margin-bottom: 16px;
+        font-size: 1.3rem;
+    }
+
+    .login-section h1 {
+        margin: 0 0 22px;
+        color: #285d48;
+    }
+
+    .login-form {
+        width: min(100%, 360px);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 38px;
+        padding: 8px 10px;
+        border: 1px solid #8bbca3;
+        border-radius: 3px;
+        background-color: #fff;
+    }
+
+    .remember-option {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 8px 0 10px;
+        color: #285d48;
+        font-size: 0.95rem;
+    }
+
+    .remember-option input {
+        width: 16px;
+        height: 16px;
+        margin: 0;
+        accent-color: #4b9b70;
+    }
+
+    .login-submit {
+        min-height: 46px;
+        border: 0;
+        border-radius: 3px;
+        background-color: #5b9fce;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    .login-side-content {
+        grid-column: 1;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .login-aside,
+    .login-article {
+        flex: 1;
+        padding: 24px 20px;
+    }
+
+    .login-aside {
+        background-color: #dff1ff;
+        border-color: #54b6ed;
+    }
+
+    .login-article {
+        background-color: #fff1d4;
+        border-color: #e5b95d;
+    }
+
+    .login-aside h2,
+    .login-article h2 {
+        margin-top: 0;
+    }
+
+    .login-aside p,
+    .login-article p {
+        margin: 0;
+    }
+
+    .login-page footer {
+        box-sizing: border-box;
+        min-height: 62px;
+        margin-top: 12px;
+        padding: 10px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #dff1ff;
+        border: 2px solid #54b6ed;
+    }
+
+    .login-page footer p {
+        margin: 0;
+    }
+
+    @media (max-width: 700px) {
+        .login-page .login-nav {
+            padding: 14px 16px;
+            gap: 14px;
+        }
+
+        .login-page .login-nav ul {
+            gap: 12px;
+        }
+
+        .login-page .login-main {
+            grid-template-columns: 1fr;
+        }
+
+        .login-section,
+        .login-side-content {
+            grid-column: auto;
+            grid-row: auto;
+        }
+
+        .login-section {
+            min-height: 390px;
+        }
+    }
